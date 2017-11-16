@@ -28,6 +28,8 @@ object BuildConfig {
 
       scalaVersion := "2.12.4",
 
+      resolvers += Resolver.sonatypeRepo("releases"),
+
       crossScalaVersions := Seq("2.11.8", scalaVersion.value),
 
       scalacOptions ++= Seq(

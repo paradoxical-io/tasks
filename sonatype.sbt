@@ -12,6 +12,7 @@ sonatypeProfileName := "io.paradoxical"
 
 pgpPublicRing := new File(".deployment/gpg/paradoxical-io.pubgpg")
 pgpSecretRing := new File(".deployment/gpg/paradoxical-io-private.gpg")
+pgpPassphrase := Some(sys.env.getOrElse("GPG_PASSWORD", default = "").toArray)
 
 pomIncludeRepository := { _ => false }
 
