@@ -1,4 +1,10 @@
-// Your profile name of the sonatype account. The default is the same with the organization value
+credentials += Credentials(
+  realm = "Sonatype Nexus Repository Manager",
+  host = "oss.sonatype.org",
+  userName = sys.env.getOrElse("SONATYPE_USER", default = "paradoxicalio"),
+  passwd = sys.env.getOrElse("SONATYPE_PASSWORD", default = "")
+)
+
 publishMavenStyle := true
 
 publishArtifact in Test := false
