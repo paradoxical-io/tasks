@@ -1,7 +1,7 @@
 function snapshot() {
-  sbt -version="${TRAVIS_BUILD_NUMBER}-SNAPSHOT" publishSigned
+  sbt -Dversion="${TRAVIS_BUILD_NUMBER}-SNAPSHOT" publishSigned
 }
 
 function release() {
-  sbt -version=$REVISION publishSigned sonatypeRelease
+  sbt -Dversion=$REVISION publishSigned sonatypeRelease
 }
