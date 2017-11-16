@@ -10,7 +10,7 @@ object BuildConfig {
   }
 
   object Revision {
-    lazy val revision = System.getProperty("revision", "SNAPSHOT")
+    lazy val version = System.getProperty("version", "1.0-SNAPSHOT")
   }
 
   object versions {
@@ -22,7 +22,7 @@ object BuildConfig {
     Seq(
       organization := "io.paradoxical",
 
-      version := s"${currentVersion}-${BuildConfig.Revision.revision}",
+      version := BuildConfig.Revision.version,
 
       credentials += Credentials(Path.userHome / ".sbt" / "credentials"),
 
