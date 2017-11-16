@@ -1,9 +1,3 @@
-credentials += Credentials("Sonatype Nexus Repository Manager",
-  "oss.sonatype.org",
-  sys.env.getOrElse("SONATYPE_USER", default = "paradoxicalio"),
-  sys.env.getOrElse("SONATYPE_PASSWORD", default = "")
-)
-
 // Your profile name of the sonatype account. The default is the same with the organization value
 publishMavenStyle := true
 

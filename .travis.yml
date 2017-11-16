@@ -8,7 +8,7 @@ cache:
   directories:
   - "$HOME/.bundle.dep.cache"
 after_success:
-  - touch /home/travis/.sbt/credentials
+  - cp credentials.sbt /home/travis/.sbt/credentials
   - "./.deployment/deploy.sh"
 env:
   global:
