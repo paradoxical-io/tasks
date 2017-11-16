@@ -8,7 +8,8 @@ commonSettings
 name := "tasks"
 
 libraryDependencies ++= Seq(
-  // your dependencies
+  "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+  "com.github.scopt" %% "scopt" % "3.7.0"
 ) ++ Dependencies.testDeps
 
 lazy val showVersion = taskKey[Unit]("Show version")
