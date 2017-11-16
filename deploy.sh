@@ -1,5 +1,5 @@
 function snapshot() {
-  sbt -Dversion="${TRAVIS_BUILD_NUMBER}-SNAPSHOT" publishSigned
+  sbt -Dversion="1.0.${TRAVIS_BUILD_NUMBER}" publishSigned sonatypeRelease
 }
 
 function release() {

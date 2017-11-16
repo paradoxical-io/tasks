@@ -8,7 +8,8 @@ cache:
   directories:
   - "$HOME/.bundle.dep.cache"
 after_success:
-- "./.deployment/deploy.sh"
+  - touch /home/travis/.sbt/credentials
+  - "./.deployment/deploy.sh"
 env:
   global:
   - secure: RUUEjRzYcT4zNwLdSUnumnytHMaYpu9EWGxT1XXZsf6BYRd6fWoNSU7PLJ3/SpFJ7UVy+a5GHuhrZQE0/xgCygbOFpZcy/2dxSkn3tsdyko/kY1b4cQKqNCt+AQvo9SzOANGnaw+z3wUmoCrFjyywwyRoHj5f9eweZRg/XmKsGF2FOuiuF46DNBxCJATq1LzTZrwaKeoXY0unE/BQVraiufN9qZeokGzhjmk3cM1Dji6ckwvsYQbBwQJYRoFaKuj7Yq6FDfC/wsO9uXfrS+KCbp37QRpu7t5tgmrmhI/v/N6lSIc0ygJkgmESYJez4V9WACriEsTBdH4TcDM2EjNO4+xrEfVcO68Mixy8/+JO/OuKYlwO0eBvfiOCedhJSny1dsdX9T3KTsO2+WW0RikGgqeJvFeaESYjTjL79ShWPHfqmOes3x/F7xdpwquB7iRbvfjM0rL5mFgMwBGxbUoUlKn72icRYC1lJsVLzeVTVCyMIy9zNwg1iHOXajxoGsVQkE6nGKn8q9zYGm8Y0YSyNPzjDwaNLyIczXLHpf+H+pAOr5XEsgfcotVqGRSh7ljQrujHxLXgbLPbXd9ktV92u/pAYcw846u9RWJxjx2o/Vyyb/qGQtZgSvRaJGH+dlyaAbDz439ZY0vwXpmsnRGHOTaZDVjBAu6xGvDWxL4Hbc=
