@@ -18,7 +18,7 @@ object BuildConfig {
     val scalatest = "3.0.1"
   }
 
-  def commonSettings(currentVersion: String) = {
+  def commonSettings() = {
     Seq(
       organization := "io.paradoxical",
 

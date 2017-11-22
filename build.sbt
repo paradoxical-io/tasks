@@ -1,14 +1,13 @@
 import sbt._
 import BuildConfig.Dependencies
 
-lazy val commonSettings = BuildConfig.commonSettings(currentVersion = "1.0")
+lazy val commonSettings = BuildConfig.commonSettings()
 
 commonSettings
 
 name := "tasks"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-reflect" % scalaVersion.value,
   "com.github.scopt" %% "scopt" % "3.7.0"
 ) ++ Dependencies.testDeps
 
