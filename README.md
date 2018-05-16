@@ -1,5 +1,8 @@
 Tasks
 ===
+[![Build Status](https://travis-ci.org/paradoxical-io/tasks.svg?branch=master)](https://travis-ci.org/paradoxical-io/tasks)
+[![Maven Central](https://img.shields.io/maven-central/v/io.paradoxical/tasks_2.12.svg)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22tasks_2.12t%22)
+
 Unified way to create a single main entrypoint that supports
 argument parsing and multiple commands.  Create tasks 
 that can be delegated to 
